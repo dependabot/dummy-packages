@@ -14,6 +14,7 @@ depends on **dummy-pkg-a < v2.0.0**, and v1.1.0 and v1.2.0 depend on
 The exact package and version names differ slightly by language, so see the
 table below for exact names and versions.
 
+
 ### JavaScript
 
 | Package name              | Version      | Dependencies                     |
@@ -26,6 +27,7 @@ table below for exact names and versions.
 | `@dependabot/dummy-pkg-b` | `v1.0.0`     | `@dependabot/dummy-pkg-a@<2.0.0` |
 | `@dependabot/dummy-pkg-b` | `v1.1.0`     | `@dependabot/dummy-pkg-a@^2.0.0` |
 | `@dependabot/dummy-pkg-b` | `v1.2.0`     | `@dependabot/dummy-pkg-a@^2.0.0` |
+
 
 ### Ruby
 
@@ -40,3 +42,23 @@ table below for exact names and versions.
 | `dummy-pkg-b` | `v1.1.0`     | `dummy-pkg-a ~> 2.0.0` |
 | `dummy-pkg-b` | `v1.2.0`     | `dummy-pkg-a ~> 2.0.0` |
 
+
+### PHP
+
+_Note: Packagist requires packages to be in the top-level directory of a
+respository, so the packages are in [php-dummy-pkg-a][php-dummy-pkg-a] and
+[php-dummy-pkg-b][php-dummy-pkg-b] rather than being in this repo._
+
+| Package name             | Version      | Dependencies                      |
+|--------------------------|--------------|-----------------------------------|
+| `dependabot/dummy-pkg-a` | `v1.0.0`     | None                              |
+| `dependabot/dummy-pkg-a` | `v1.0.1`     | None                              |
+| `dependabot/dummy-pkg-a` | `v1.1.0`     | None                              |
+| `dependabot/dummy-pkg-a` | `v2.0.0`     | None                              |
+| `dependabot/dummy-pkg-a` | `v2.1.0-RC1` | None                              |
+| `dependabot/dummy-pkg-b` | `v1.0.0`     | `dependabot/dummy-pkg-a <2.0.0`   |
+| `dependabot/dummy-pkg-b` | `v1.1.0`     | `dependabot/dummy-pkg-a ~2.0`     |
+| `dependabot/dummy-pkg-b` | `v1.2.0`     | `dependabot/dummy-pkg-a ~2.0`     |
+
+[php-dummy-pkg-a]: https://github.com/dependabot/php-dummy-pkg-a
+[php-dummy-pkg-b]: https://github.com/dependabot/php-dummy-pkg-b
