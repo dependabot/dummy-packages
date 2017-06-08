@@ -1,0 +1,7 @@
+{
+  "name": "@dependabot/dummy-pkg-a",
+  "description": "A dummy package for testing Dependabot",
+  "version": "2.1.0-rc1",
+  "author": "Dependabot",
+  "license": "MIT"
+}
